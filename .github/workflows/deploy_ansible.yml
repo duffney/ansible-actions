@@ -13,4 +13,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: ./.github/actions/ansible
       env:
-        AZURE_SUBSCRIPTION_ID: AZURESUBID
+        AZURE_TENANT: ${{ secrets.AZURE_TENANT }}
+        AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+        AZURE_SECRET: ${{ secrets.AZURE_SECRET }}
