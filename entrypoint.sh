@@ -1,5 +1,5 @@
   
-#!/bin/sh
+#!/bin/bash
 
 # echo "$VAULT_PASS" > ~/.vault_pass.txt
 # mkdir ~/.ssh
