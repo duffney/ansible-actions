@@ -1,8 +1,10 @@
 ---
-- hosts: localhost
-  gather_facts: false
-  connection: local
-
-  tasks:
-  - name: Execute the command in remote shell
-    shell: echo 'hello'
+  - hosts: localhost
+    gather_facts: fasle
+    connection: local
+    
+    tasks:
+      - name: Create resource group
+        azure_rm_resourcegroup:
+          name: ansibleactions
+          location: eastus
