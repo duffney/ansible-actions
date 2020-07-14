@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  gather_facts: false
+  connection: local
+
+  tasks:
+  - name: Execute the command in remote shell
+    shell: echo 'hello'
